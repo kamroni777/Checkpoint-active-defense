@@ -1,0 +1,19 @@
+Password Policy Verification
+
+Run gpupdate/force on a domain controller
+
+Check applied policies with gpresult/r on a workstation
+
+Account Policy Verification
+
+Try to log in with blankweak password (should be rejected)
+
+Attempt 3 failed logins to test lockout policy
+
+GPO Verification
+
+Confirm Guest account is disabled
+
+Verify Administrator account was renamed
+
+Check that last username doesn't appear at login

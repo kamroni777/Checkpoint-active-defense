@@ -1,0 +1,27 @@
+1: Create GPO
+Tools → Group Policy Management
+
+Right-click Group Policy Objects → New
+
+Name it SecureAdminWorkstation
+
+Right-click the new GPO → Edit
+
+ 2: Configure Security Settings
+Navigate to:
+Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → Security Options
+
+Configure these policies:
+
+Accounts: Guest account status: Disabled
+
+Accounts: Rename administrator account: Set to a non-default name (e.g., GC_Admin)
+
+Interactive logon: Do not display last username: Enabled
+
+3: Link GPO to OU
+In Group Policy Management, right-click the OU containing IT workstations
+
+Select Link an Existing GPO
+
+Choose SecureAdminWorkstation and click OK
